@@ -16,7 +16,7 @@ after_success:
     - docker build -t tyrelfecha/multi-server -f ./server
     - docker build -t tyrelfecha/multi-worker -f ./worker
     # login to docker CLI
-    - echo "$docker_password" | docker login -u "docker_id" --password-stdin
+    - echo "$docker_password" | docker login -u "$docker_id" --password-stdin
     # Take imagegs push to Docker Hub
     - docker push tyrelfecha/multi-client
     - docker push tyrelfecha/multi-nginx
