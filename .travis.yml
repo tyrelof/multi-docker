@@ -18,7 +18,7 @@ after_success:
     # login to docker CLI
     - echo "$docker_password" | docker login -u "docker_id" --password-stdin
     # Take imagegs push to Docker Hub
-    - docker push yrelfecha/multi-client
-    - docker push yrelfecha/multi-nginx
-    - docker push yrelfecha/multi-server
-    - docker push yrelfecha/multi-worker
+    - docker push tyrelfecha/multi-client
+    - docker push tyrelfecha/multi-nginx
+    - docker push tyrelfecha/multi-server
+    - docker push tyrelfecha/multi-worker
